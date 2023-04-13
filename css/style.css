@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background-image: url(../image/sun1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+section {
+   
+    position: absolute;
+    content: " ";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  animation: floating 5s linear infinite;
+  animation-direction: alternate;
+}
+section h1{
+    color: #ffffff;
+    font-size: 90px;
+    font-family: 'Tangerine', cursive;
+    text-shadow: -8px 12px 1px #42404073;
+    position: relative;
+}
+section h1::before{
+    content: "";
+    position: absolute;
+    left: -122px;
+    top: -280px;
+    height: 100px;
+    width: 200px;
+    border-left: 15px solid #ffffff;
+    /* background: #ffffff; */
+    border-radius: 50px;
+    background: transparent;
+    transform: rotate(-30deg);
+}
+
+@keyframes floating{
+    0%{left: 49%;
+
+    }
+    25%{top: 49%;
+
+    }
+    75%{left: 51%;
+
+    }
+    100%{top: 50%;
+
+    }
+
+}
+
+.musque{
+    background-image: url(../image/mosque.png);
+    min-height: 200px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 460px;
+    position: absolute;
+    bottom: -24px;
+    width: 100%;
+    left: 0;
+    animation: anim 20s linear infinite;
+}
+
+@keyframes anim{
+    0%{background-position:-100px ;
+
+    }
+    100%{
+background-position: 1600px;
+    }
+
+}
+
+ .musque::before{
+    content: " ";
+    background-image: url(../image/mosque.png);
+    min-height: 300px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 750px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    left: 0;
+    opacity: 0.5;
+    animation: anim 20s linear infinite;
+    animation-direction: reverse;
+}
+
+canvas.particles-js-canvas-el {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 80vh;
+}
+
+.dua {
+
+position: absolute;
+
+left: 50%;
+
+top: 62%;
+
+transform: translate(-50%, -60%);
+}
+.dua h2{
+    
+font-size: 48px;
+    
+color: #1c1a1a;
+    
+
+}
+.dua strong{
+    
+font-size: 17px;
+    
+padding: 7px;
+    
+color: #322f2f;
+}
+header{
+    text-align: center;
+    padding: 59px;
+    /* font-size: 15px; */
+}
+header h1{
+    
+font-size: 25px;
+    
+font-style: italic;
+    
+color: #3B3B3B;
+}
+
+
+

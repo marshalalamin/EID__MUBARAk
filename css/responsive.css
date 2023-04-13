@@ -1,0 +1,64 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+
+    header h1{
+    
+font-size: 15px;
+    
+font-style: italic;
+    
+color: #302d2d;
+    
+margin-top: 24px;
+    
+}
+
+    section h1{
+        color: #ffffff;
+        font-size: 30px;
+        font-family: 'Tangerine', cursive;
+        text-shadow: -8px 12px 1px #42404073;
+        position: relative;
+    }
+
+
+    .dua h2{
+    
+font-size: 25px;
+    
+text-align: center;
+    
+/* width: 98%; */
+    
+margin-bottom: 5px;
+    
+color: #1c1a1a;
+}
+        .dua strong{
+            
+font-size: 12px;
+            
+padding: 5px;
+            
+color: #000000c4;
+        }
+
+
+        section h1::before{
+            content: "";
+            position: absolute;
+            left: -50px;
+            top: -260px;
+            height: 100px;
+            width: 200px;
+            border-left: 15px solid #ffffff;
+            /* background: #ffffff; */
+            border-radius: 50px;
+            background: transparent;
+            transform: rotate(-30deg);
+        }
+
+
+}
